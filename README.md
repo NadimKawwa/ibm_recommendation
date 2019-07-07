@@ -33,4 +33,15 @@ In order to build better recommendations for the users of IBM's platform, we cou
 Given the amount of content available for each article, there are a number of different ways in which someone might choose to implement a content based recommendations system. Using  NLP skills, we might come up with some extremely creative ways to develop a content based recommendation system. 
 ## V. Matrix Factorization
 
-Finally, we will complete a machine learning approach to building recommendations. Using the user-item interactions, we will build out a matrix decomposition. Using our decomposition, we will get an idea of how well we can predict new articles an individual might interact with (spoiler alert - it isn't great). We will finally discuss which methods we might use moving forward, and how we might test how well your recommendations are working for engaging users.
+Finally, we will complete a machine learning approach to building recommendations. Using the user-item interactions, we will build out a matrix decomposition. Using our decomposition, we will get an idea of how well we can predict new articles an individual might interact with. We will finally discuss which methods we might use moving forward, and how we might test how well your recommendations are working for engaging users.
+
+We will also consider how picking the number of latent features will affect our accuracy prediction as seen in the plot below.
+![latent_feat_acc](https://github.com/NadimKawwa/ibm_recommendation/blob/master/plots/acc_latent_trial.png)
+
+Addtionally we can also see how the sum of squared errors varies with the choice of latent features.
+![latent_feat_sse](https://github.com/NadimKawwa/ibm_recommendation/blob/master/plots/svd_plot_train_test.png)
+
+
+## Conclusion
+
+We have seen several ways we might decide to build a recommendation engine for existing and new users. Although far from complete, the various methods presented here offer a solid introduction to recommendation engines.
